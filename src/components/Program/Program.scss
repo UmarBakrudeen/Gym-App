@@ -1,0 +1,56 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+
+  .program__categories {
+    display: flex;
+    gap: 1rem;
+    .category {
+      display: flex;
+      flex-direction: column;
+      background-color: gray;
+      padding: 2rem;
+      gap: 1rem;
+      color: #fff;
+      justify-content: space-between;
+      > :nth-child(1) {
+        width: 2rem;
+        height: 2rem;
+        fill: #fff;
+      }
+      > :nth-child(2) {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      > :nth-child(3) {
+        font-size: 1rem;
+        line-height: 25px;
+      }
+      .join__now {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        img {
+          width: 1rem;
+        }
+      }
+
+      &:hover {
+        background: var(--planCard);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.program__header {
+  display: flex;
+  gap: 5rem;
+  font-size: 4rem;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
